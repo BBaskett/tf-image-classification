@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background: rgba(185, 185, 185, 0.5);
+  border-radius: 10px;
+  margin: 0.5rem;
+}
+
+header > span {
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: rgba(156, 39, 176, 1);
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  header > h1 {
+    margin: 0;
+  }
+}
+
+img {
+  border-radius: 4px;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  overflow: hidden;
+}
