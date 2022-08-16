@@ -1,3 +1,7 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 :root {
   color: rgb(75, 75, 75);
 }
@@ -29,4 +33,9 @@ button {
 button:hover {
   cursor: pointer;
   scale: 1.1;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 128, 0, 1);
 }

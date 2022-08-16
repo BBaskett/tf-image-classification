@@ -37,9 +37,8 @@ function App() {
       </header>
       <main>
         <span className="description">
-          Display the top
-          {classificationCount} classifications (and respective confidence
-          intervals) of an image.
+          Display the top {classificationCount} classifications (and respective
+          confidence intervals) of an image.
         </span>
         <hr />
         <h3>Images</h3>
