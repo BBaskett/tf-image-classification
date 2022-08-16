@@ -1,0 +1,35 @@
+section {
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  padding: 1rem;
+  border-collapse: collapse;
+}
+
+thead {
+  padding: 0.25rem 0;
+  background-color: rgba(225, 225, 225, 0.25);
+}
+
+thead > tr > th:last-child {
+  text-align: center;
+}
+
+th {
+  text-align: left;
+}
+
+tbody > tr + tr {
+  border-top: 1px solid rgba(255, 128, 0, 0.5);
+}
+
+tbody > tr > td:last-child {
+  text-align: center;
+  color: rgb(255, 128, 0);
+}
+
+.loading {
+  text-align: center;
+}

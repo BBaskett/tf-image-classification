@@ -1,5 +1,32 @@
+:root {
+  color: rgb(75, 75, 75);
+}
+
 body {
-  background-color: rgb(136, 136, 136);
   margin: 0;
-  color: white;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  background-color: rgba(255, 128, 0, 1);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  transition: all 0.25s ease-out;
+}
+
+button:hover {
+  cursor: pointer;
+  scale: 1.1;
 }

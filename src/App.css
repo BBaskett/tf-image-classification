@@ -1,35 +1,95 @@
 header {
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
-  background: rgba(185, 185, 185, 0.5);
-  border-radius: 10px;
-  margin: 0.5rem;
+  user-select: none;
+  background-color: rgba(225, 225, 225, 0.25);
+  border-bottom: 1px solid rgba(255, 128, 0, 0.5);
 }
 
-header > span {
-  font-weight: 100;
-  font-size: 0.8rem;
-  color: rgba(156, 39, 176, 1);
+main {
+  padding: 2rem;
+}
+
+main > * + * {
+  margin-top: 1rem;
+}
+
+header > img {
+  max-width: 200px;
+}
+
+.hero > img {
+  margin-right: 0.5rem;
+}
+
+section.images {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section.images h5 {
+  margin-bottom: 1rem;
+  color: rgba(255, 128, 0, 1);
+}
+
+section.images button:last-child {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.buttons {
+  margin: 1rem;
+}
+
+.buttons > button + button {
+  margin-left: 0.5rem;
+}
+
+.img-container {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.img-container > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  padding: 1rem 2rem;
+  text-align: center;
+  background: rgba(200, 200, 200, 0.25);
+  box-sizing: content-box;
+}
+
+footer,
+footer > * {
+  color: rgba(75, 75, 75, 1);
+  font-size: 0.7rem;
 }
 
 @media screen and (max-width: 400px) {
   header {
     flex-direction: column;
-    align-items: flex-start;
+  }
+
+  main {
     padding: 1rem;
   }
 
-  header > h1 {
-    margin: 0;
+  section.images > .sample {
+    margin-bottom: 1rem;
   }
 }
 
-img {
-  border-radius: 4px;
-  height: 250px;
-  width: 250px;
-  object-fit: cover;
-  overflow: hidden;
+@media screen and (max-width: 550px) {
+  .images {
+    flex-direction: column;
+  }
 }
